@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react' // (or whatever plugin you are using)
+import react from '@vitejs/plugin-react'
+import tailwindcss from 'tailwindcss' // If using Tailwind v3
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Coffee/', // <--- MUST BE EXACTLY THIS, NOT A COMMENT
+  base: '/Coffee/', // <--- MUST BE HERE
 })
